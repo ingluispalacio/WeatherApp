@@ -1,0 +1,48 @@
+{
+  "coord": {
+    "lon": -75.4861,
+    "lat": 10.3954
+  },
+  "weather": [
+    {
+      "id": 501,
+      "main": "Rain",
+      "description": "moderate rain",
+      "icon": "10d"
+    }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 24.94,
+    "feels_like": 25.94,
+    "temp_min": 24.94,
+    "temp_max": 24.94,
+    "pressure": 1010,
+    "humidity": 94,
+    "sea_level": 1010,
+    "grnd_level": 1007
+  },
+  "visibility": 10000,
+  "wind": {
+    "speed": 2.57,
+    "deg": 240
+  },
+  "rain": {
+    "1h": 1.15
+  },
+  "clouds": {
+    "all": 40
+  },
+  "dt": 1760634391,
+  "sys": {
+    "type": 1,
+    "id": 8588,
+    "country": "CO",
+    "sunrise": 1760611832,
+    "sunset": 1760654641
+  },
+  "timezone": -18000,
+  "id": 3687238,
+  "name": "Cartagena",
+  "cod": 200
+}

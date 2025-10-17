@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap");
+@import "tailwindcss";
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+@theme {
+  --breakpoint-xs: 20rem;  
+  --breakpoint-ss: 23.4375rem; 
+  --breakpoint-ms: 26.5625rem; 
+  --breakpoint-2xl: 100rem;    
+  --breakpoint-3xl: 120rem;   
+  --font-primary: "Raleway", sans-serif;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: white;
+}
+
+
+footer{
+    font-family: var(--font-primary); 
+    font-size: 14px;
+}

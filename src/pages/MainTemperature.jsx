@@ -14,19 +14,15 @@ function MainTeperature() {
         longitude: null
     });
 
-    const [loadingLocation, setLoadingLocation] = useState(true); 
-
+   
     const fetchCoordinates = async () => {
-        setLoadingLocation(true);
         try {
             const coords = await getUserCoordinates();
             setCordinates(coords);
         } catch (error) {
             console.error("Error getting coordinates:", error);
             setCordinates(initCordinate);
-        } finally {
-            setLoadingLocation(false);
-        }
+        } 
     };
 
     useEffect(() => {
@@ -55,7 +51,6 @@ function MainTeperature() {
 
     // const { loading: loadingWeather, data: dataWeather, error: errorWeather } = useServices('/currentData.json');
     // const { loading: loadingForecast, data: dataForecast, error: errorForecast } = useServices('/5daysData.json');
-    
     const getGeolocalisation = async () => {
         try {
             const respIp = await getDataIpify();
